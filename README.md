@@ -34,11 +34,14 @@ your-project-folder/
 ├── image/image/                  <-- The folder containing train dataset images
 │   ├── train_image1.jpg
 │   └── train_image2.jpg
+│
 ├── validation/validation/         <-- The folder containing validation dataset images
 │   ├── validation_image1.jpg
 │   └── validation_image2.jpg
+│
 ├── coco_annotations.json        <-- The COCO annotation file for the train dataset
 ├── coco_annotations_val.json    <-- The COCO annotation file for the validation dataset
+│
 └── visualization.py             <-- The script to check the annotations
 ```
 
