@@ -54,7 +54,7 @@ In `visualization.py`:
 ```python
 # --- Configuration ---
 # IMPORTANT: Update this path to where your images are stored.
-IMAGE_DIR = "./images" # Or "C:/path/to/your/images"
+IMAGE_DIR = "./image/image" # Or "C:/path/to/your/images"
 COCO_JSON_PATH = "coco_annotations.json"
 IMAGES_TO_SHOW = 5 # Number of random images to display
 ```
