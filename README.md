@@ -8,7 +8,7 @@ A Python script is included to help you visualize the bounding box annotations o
 - **Format**: COCO (JSON)
 - **Task**: Object Detection
 - **Content**: Images of vehicles with annotated regions of damage
-- **Classes**: vo_kinh, tray_son, thung, mop_lom, be_den, mat_bo_phan, rach
+- **7 Classes**: vo_kinh, tray_son, thung, mop_lom, be_den, mat_bo_phan, rach
 
 ## Prerequisites
 
