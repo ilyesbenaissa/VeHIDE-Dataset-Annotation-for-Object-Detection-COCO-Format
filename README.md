@@ -1,11 +1,10 @@
 # VeHIDE Dataset for Object Detection (COCO Format)
 
-This repository contains the VeHIDE (Vehicle Hidden) dataset, formatted for object detection tasks using the popular COCO annotation style. The dataset is designed for training models to detect various types of vehicle damage.
+This repository contains annotations VeHIDE (Vehicle Hidden) dataset, formatted for object detection tasks using the popular **COCO annotation** style. The dataset is designed for training models to detect various types of vehicle damage.
 
 A Python script is included to help you visualize the bounding box annotations on the images to verify the dataset's integrity.
 
-## About the Dataset
-
+## About the annotation
 - **Format**: COCO (JSON)
 - **Task**: Object Detection
 - **Content**: Images of vehicles with annotated regions of damage
@@ -19,12 +18,11 @@ Before you begin, ensure you have Python 3 installed. You will also need to inst
 pip install Pillow
 ```
 ## Dataset: 
-You can [Download the VeHIDE dataset from Kaggle](https://www.kaggle.com/datasets/hendrichscullen/vehide-dataset-automatic-vehicle-damage-detection/data) and place the `images` folder and `coco_annotations.json` file in your project directory.
+You can [Download the VeHIDE dataset from Kaggle](https://www.kaggle.com/datasets/hendrichscullen/vehide-dataset-automatic-vehicle-damage-detection/data) and place them in the right directory. (check File Structure section below)
 
 ## Setup & Usage
 
 Follow these steps to visualize the dataset annotations.
-
 
 
 ### 1. File Structure
@@ -33,11 +31,15 @@ Organize your project files as follows. The visualization script should be in th
 
 ```
 your-project-folder/
-├── images/                  <-- The folder containing all dataset images
-│   ├── image1.jpg
-│   └── image2.jpg
-├── coco_annotations.json    <-- The COCO annotation file for the dataset
-└── visualization.py         <-- The script to check the annotations
+├── image/image/                  <-- The folder containing train dataset images
+│   ├── train_image1.jpg
+│   └── train_image2.jpg
+├── validation/validation/         <-- The folder containing validation dataset images
+│   ├── validation_image1.jpg
+│   └── validation_image2.jpg
+├── coco_annotations.json        <-- The COCO annotation file for the train dataset
+├── coco_annotations_val.json    <-- The COCO annotation file for the validation dataset
+└── visualization.py             <-- The script to check the annotations
 ```
 
 ### 2. Configure the Visualization Script
@@ -67,5 +69,7 @@ This will open several windows, each showing a random image from the dataset wit
 ## File Descriptions
 
 - **visualization.py**: A utility script to parse the COCO file and display annotated images for verification
-- **coco_annotations.json**: The complete annotation file for the dataset, ready for use with object detection models that support the COCO format
-- **/images** (directory): Contains all the source images for the dataset
+- **coco_annotations.json**: The annotation file for the training set, ready for use with object detection models that support the COCO format
+- **coco_annotations_val.json**: The annotation file for the validation set, ready for use with object detection models that support the COCO format
+- **/image/image** (directory): Contains all the source train images for the dataset
+- **/validation/validation** (directory): Contains all the source train images for the dataset
